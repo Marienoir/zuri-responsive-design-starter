@@ -5,6 +5,24 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+.mobile-container{
+    color: #bcc3c7;
+    
+}
+.nav-bar{
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.nav-bar a{
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
 }
 
 div.nav-bar {
@@ -344,4 +362,89 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+/* MEDIA QUERIES
+for smaller devices like phones */
+@media only screen and (max-width: 768px){
+    .nav-bar #myLinks{
+        display: none;
+    }
+    .nav-bar a.icon{
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 5px;
+    }
+    div.nav-bar {
+        display: flex;
+        padding: 1rem 1rem;
+        width: 100vw;
+        background: #304353;
+    }
+    ul.nav-links {
+        display: block;
+    }
+    ul li {
+        margin: 2px 2px;
+        font-size: 1rem;
+    }
+    div.hero-content-heading p {
+        font-size: 0.8rem;
+
+    }
+    div.hero-content-heading h3 {
+        font-size: 1rem;
+    }
+    div.hero-section {
+        padding: 5rem 1rem;
+    }
+    div.hero-background {
+        padding: 2rem;
+    }
+    div.background {
+        padding: 10px 15px;
+        height: 250px;
+    }
+    div.background h4 {
+        font-size: 1.5rem;
+    }
+    div.background p {
+        padding-left: 1rem;
+    }
+    div.hero-background-pos {
+        display: none;
+    }
+    div.snapshot-box {
+        padding: 2rem 1rem;
+    }
+    div.snapshot-box-content{
+        display: block;
+    }
+    div.box1,
+    div.box3{
+        padding: 20px 20px;
+        width: 300px;
+        height: 230px;
+    }
+    div.footer-input{
+        display: block;
+    }
+    input[type="text"],
+    input[type="email"]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    div.footer-textarea{
+        display: block;
+    }
+    textarea{
+        width: 100%;
+    }
+    div.footer-btn a {
+        padding: 10px 20px;
+    }
+    div.footer h6 {
+        font-size: 0.8rem;
+    }
 }
